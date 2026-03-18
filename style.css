@@ -1,0 +1,192 @@
+/* BODY */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    /* Degradado: Negro al 70% y Escarlata al 30% */
+    background: linear-gradient(to bottom, #000000 70%, #6e1305 100%);
+    background-attachment: fixed;
+}
+
+/* HEADER */
+.header{
+    /* border: 2px solid rgb(83, 13, 196); */
+    background-color: black;
+    color: yellow;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-hidden{
+    transform: translateY(-100%);
+}
+
+main{
+    margin-top: 160px;
+}
+
+/* Barra de Navegacion */
+
+.navbar{
+    padding: 2rem;
+    background-color: f5f6f7;
+    /* border: 2px solid red; */
+}
+
+.navbar-collapse{
+    align-items:center;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+}
+
+.navbar-brand{
+    /* border: 2px solid green; */
+}
+
+.navbar-nav a{
+    /* border: 2px solid orange; */
+    color: white;
+}
+
+.navbar-toggler span{
+    background-color: #ffffff;
+    color: aliceblue;
+}
+
+.navbar a:hover{
+    color: #FF2400;
+}
+
+.navbar-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid purple; */
+}
+
+.navbar-title h1{
+    font-family: 'Bangers', cursive;
+    font-size: 4rem;
+    color: #FFD700; /* Dorado para resaltar */
+    margin: 0;
+    text-shadow: 3px 3px #520404;
+
+}
+
+.navbar-title .eslogan{
+    font-size: 1.5rem;
+    color: #FF2400; /* Rojo para resaltar */
+    text-shadow: 2px 2px #000;
+}
+
+h2{
+    /* border: 2px solid pink; */
+    align-items: center;
+}
+
+
+/* Temas */
+
+.temas h2{
+    color: yellow;
+}
+
+.row{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row .card{
+    background-color: #000000;
+    color: white;
+    box-shadow: #c9720f 0px 0px 10px;
+    transition: transform 0.3s;
+}
+
+.row .card:hover{
+    transform: scale(1.05);
+    box-shadow: #c9720f 0px 0px 20px;
+    background-color: #2e0903;
+}
+
+.card img{
+    /* border: 2px solid yellow; */
+    width: 80%;
+    align-self: center;
+}
+
+.card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-body h5{
+    /* border: 2px solid magenta; */
+    text-align: center;
+}
+
+.card .card-img-top{
+    /* border: 2px solid cyan; */
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5%;
+}
+
+/* formulario */
+.form-container{
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+form{
+    width: 30%;
+    border: 2px solid orange;
+    padding: 1.5rem;
+    background-color: #000000;
+    color: white;
+    box-shadow: #c9720f 0px 0px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOOTER */
+
+footer p{
+    /* border: 2px solid cyan; */
+    text-align: center;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    padding-top: 20px;
+}
+
+
+@media screen and (max-width: 767px){
+    .navbar-brand, .navbar-title{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 991px){
+    .collapse .navbar-title h1{
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 1199px){
+    .eslogan{
+        display: none;
+    }
+    
+}

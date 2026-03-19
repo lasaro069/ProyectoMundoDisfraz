@@ -38,6 +38,7 @@ main{
 }
 
 .navbar-collapse{
+    background-color: #2e0903;
     align-items:center;
     justify-content: space-between;
     /* border: 2px solid blue; */

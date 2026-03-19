@@ -1,13 +1,27 @@
 .container {
-    margin-top: 20px;
+    justify-self: center;
+    width: 800px;
+    height: 650px;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
+.container h1 {
+    font-size: 24px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
 .container img {
-    max-width: 40%;
-    height: auto;
+    width: 80%;
+}
+
+.container .titulo {
+    width: 80%;
+    font-size: 18px;
+    color: white;
+    justify-self: center;
 }
 
 body {
